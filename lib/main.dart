@@ -9,10 +9,36 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!2222'),
+        appBar: AppBar(
+          title: Text('앱제dsssd', textAlign: TextAlign.center),
+          centerTitle: false,
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+        body: Container(
+          width: 99999,
+          height: 99999,
+          color: Colors.greenAccent,
+          // foregroundDecoration: BoxDecoration(color: Colors.green),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [],
+          ),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.phone, size: 32),
+                Icon(Icons.message, size: 32),
+                Icon(Icons.contact_page, size: 32),
+              ],
+            ),
+          ),
         ),
       ),
     );
