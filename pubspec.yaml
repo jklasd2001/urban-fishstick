@@ -1,6 +1,6 @@
 name: flutter_application_2
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
+  supabase_flutter: ^2.8.4
 
 dev_dependencies:
   flutter_test:
@@ -16,6 +18,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-  assets: 
+  assets:
+    - .env
     - assets/
   uses-material-design: true
